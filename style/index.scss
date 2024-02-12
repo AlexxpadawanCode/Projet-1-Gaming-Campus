@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(./asset/fonts/Montserrat-VariableFont_wght.ttf);
+  }
+$color1:rgb(95, 4, 170);
+$white: rgb(241, 241, 241);
+$black: rgb(23, 23, 23);
+
+@mixin centerchild {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Montserrat, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+button {
+    text-transform: uppercase;
+    color: white;
+    background: none;
+    outline: none;
+    border: 1px solid $white;
+    font-weight: 700;
+    transition: 0.4s ease;
+    cursor: pointer;
+    &:hover {
+        background: $white;
+        color: black;
+    }
+}
+
+@import "./layout/nav";
+@import "./layout/header";
+@import "./layout/section-icon";
+@import "./layout/section-news";
+

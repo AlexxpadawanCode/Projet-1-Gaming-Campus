@@ -175,8 +175,18 @@ header button {
   max-width: 1000px;
   margin: 0 auto;
 }
+@media screen and (max-width: 704px) {
+  .news-part .head-news {
+    display: block;
+  }
+}
 .news-part .head-news .left-part {
   line-height: 30px;
+}
+@media screen and (max-width: 704px) {
+  .news-part .head-news .left-part {
+    width: 100%;
+  }
 }
 .news-part .head-news h2 {
   text-transform: uppercase;
@@ -184,10 +194,21 @@ header button {
   font-weight: 600;
   text-align: left;
 }
+@media screen and (max-width: 704px) {
+  .news-part .head-news h2 {
+    text-align: center;
+  }
+}
 .news-part .head-news p {
   font-weight: 600;
   font-size: 0.9rem;
   text-align: left;
+}
+@media screen and (max-width: 704px) {
+  .news-part .head-news p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 .news-part .head-news button {
   color: rgb(23, 23, 23);
@@ -203,6 +224,14 @@ header button {
   position: relative;
   max-width: 23%;
 }
+@media screen and (max-width: 704px) {
+  .news-part .main-news-container > div {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    margin-top: 58px;
+  }
+}
 .news-part .main-news-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +241,11 @@ header button {
   max-width: 1100px;
   margin: 45px auto;
 }
+@media screen and (max-width: 704px) {
+  .news-part .main-news-container {
+    display: block;
+  }
+}
 .news-part .main-news-container img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -219,6 +253,11 @@ header button {
   border-radius: 3px;
   -webkit-box-shadow: 0 2px 10px #888;
           box-shadow: 0 2px 10px #888;
+}
+@media screen and (max-width: 704px) {
+  .news-part .main-news-container img {
+    width: 50%;
+  }
 }
 .news-part .main-news-container h4 {
   margin: 15px 0;
@@ -242,4 +281,123 @@ header button {
   text-align: left;
   position: absolute;
   bottom: 0;
+}
+
+.contact {
+  padding: 65px 0 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 704px) {
+  .contact {
+    display: none;
+  }
+}
+.contact .main-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-weight: 400;
+  position: relative;
+}
+.contact .main-contact::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  background: rgb(235, 235, 235);
+  bottom: -28px;
+}
+.contact .main-contact .contact-list {
+  text-align: left;
+  width: 24%;
+}
+.contact .main-contact h5 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+.contact .main-contact h6 {
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+.contact .main-contact ul {
+  text-align: left;
+}
+.contact .main-contact li {
+  margin: 15px 0;
+}
+.contact .main-contact i {
+  font-size: 0.8rem;
+  margin: 0 12px 30px 0;
+}
+.contact .main-contact img {
+  margin: 0 auto;
+  display: block;
+}
+.contact .main-contact p {
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+.contact .main-contact a {
+  text-decoration: none;
+}
+.contact .main-contact .network {
+  margin: 20px 0 8px;
+}
+.contact .footer-contact {
+  padding: 60px 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+.contact .footer-contact .left-contact {
+  text-align: left;
+  width: 30%;
+}
+.contact .footer-contact .right-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+.contact .footer-contact h3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+}
+
+footer {
+  background: rgb(15, 15, 15);
+  color: whitesmoke;
+  padding: 25px;
+}
+footer h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 895px) {
+  footer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=index.css.map */
